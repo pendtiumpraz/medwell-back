@@ -14,9 +14,15 @@ class OrganizationSeeder extends Seeder
         // Bio Farma - Main Organization
         $bioFarma = Organization::create([
             'name' => 'Bio Farma',
+            'code' => 'BF001',
+            'type' => 'pharmaceutical',
             'email' => 'info@biofarma.co.id',
             'phone' => '+62-22-2033755',
             'address' => 'Jl. Pasteur No.28, Pasteur, Sukajadi, Bandung',
+            'city' => 'Bandung',
+            'province' => 'Jawa Barat',
+            'postal_code' => '40161',
+            'country' => 'Indonesia',
             'status' => 'active'
         ]);
 
@@ -79,9 +85,15 @@ class OrganizationSeeder extends Seeder
         // Sample Partner Organization
         $partner = Organization::create([
             'name' => 'Rumah Sakit Umum Jakarta',
+            'code' => 'RSU001',
+            'type' => 'hospital',
             'email' => 'info@rsujakarta.co.id',
             'phone' => '+62-21-5551234',
             'address' => 'Jl. Sudirman No.100, Jakarta',
+            'city' => 'Jakarta',
+            'province' => 'DKI Jakarta',
+            'postal_code' => '12190',
+            'country' => 'Indonesia',
             'status' => 'active'
         ]);
 
